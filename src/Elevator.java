@@ -306,7 +306,7 @@ public class Elevator {
 
                 Thread.sleep(500);
 
-                if (totalElevatorContainer.size()==0&&totalOrderingPeopleMap.get(i).size()>0){
+                if (totalElevatorContainer.size()==0&&getTotalOrderingPeopleMap().get(i).size()>0){
                     ConcurrentLinkedQueue<Passenger> queuePassengersOnTheCurrentFloor = totalOrderingPeopleMap.get(i);
                     ConcurrentLinkedQueue<Passenger> queuePassengersToUp = new ConcurrentLinkedQueue<>();
                     ConcurrentLinkedQueue<Passenger> queuePassengersToDown = new ConcurrentLinkedQueue<>();
