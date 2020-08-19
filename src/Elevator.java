@@ -335,7 +335,7 @@ public class Elevator {
                         }
                         up(startLevelFloor, totalElevatorContainer, totalOrderingPeopleMap);
                     }
-                } else if (elevatorContainer.size()==0&&orderingPeopleMap.get(i).size()==0){
+                } else if (totalElevatorContainer.size()==0&&totalOrderingPeopleMap.get(i).size()==0){
                     totalElevatorContainer = firstFillingElevator(totalOrderingPeopleMap);
                     System.out.println("Elevator is EMPTY. Restart process");
                     up(2, totalElevatorContainer, getAfterFirstFillingOrderingPeopleMap());
