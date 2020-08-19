@@ -288,7 +288,7 @@ public class Elevator {
             try {
 
                 for (int j = 0; j < totalElevatorContainer.size(); j++) {
-                    System.out.println("Passenger №"+j+1+" goes to the " +totalElevatorContainer.get(j).getFloorNumberRoute() + " floor");
+                    System.out.println("Passenger №"+(j+1)+" goes to the " +totalElevatorContainer.get(j).getFloorNumberRoute() + " floor");
                 }
 
                 System.out.println("===============================ELEVATOR GOING TO THE " + i + " FLOOR===================================");
